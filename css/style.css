@@ -1,0 +1,10 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3d1af;
+}
+
+button{
+    border: 2px solid powderblue;
+    margin: 50px;
+    background-color: rgb(70, 58, 8);
+}
