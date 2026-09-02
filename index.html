@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Na Central Livro, você encontra histórias para todos os momentos. Explore nosso catálogo de livros, descubra novos autores e encontre sua próxima grande leitura em um só lugar. Central Livro — sua história começa aqui.">
-    <link rel="shortcut icon" href="node_modules/imagens/logo1.ico" image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo1.ico" image/x-icon">
     <title>central livro - livraria</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="node_modules/imagens/ChatGPT Image 31 de ago. de 2026, 20_26_06.png" width="300" height="300" alt="logo da  central livro">
+            <img src="imagens/ChatGPT Image 31 de ago. de 2026, 20_26_06.png" width="300" height="300" alt="logo da  central livro">
         </div>
         <section>
             <div>
@@ -40,8 +40,51 @@
 
         <section>
             <h2>categorias</h2>
+        </section>
 
+        <section class="secao-video">
+            <h2>conheça nossa coleção</h2>
 
+            <p>
+                Conheça um pouco da experiência da Central livro e descubra sua próxima leitura.
+            </p>
+            <!--
+                preload="metadata" foi escolhido porque o vídeo é um conteúdo
+                complementar da página. Dessa forma, o navegador pode carregar
+                informações básicas do vídeo sem carregar todo o arquivo antes
+                da interação do usuário.
+            -->
+
+            <video 
+            controls 
+            preload="metadata" 
+            poster="imagens/poster_video.png"
+            >
+
+                <source src="videos/conheça_central_livro.mp4" 
+                type="video/mp4"
+                >
+
+                <source src="videos/conheça_central_livro.Webm" 
+                type="video/Webm"
+                >
+
+                <track 
+                kind="subtitles" 
+                src="videos/legendas.vtt" 
+                srclang="pt-br" 
+                label="Português" 
+                default
+                >
+
+                <p id="status-video">
+                <!--mensagem alternativa caso o navegador não abra o video-->
+                Seu navegador não suporta a reprodução do video.
+                </p>
+
+            </video>
+
+            
         </section>
 
         <section>
