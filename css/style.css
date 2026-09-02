@@ -3,8 +3,7 @@ body{
     background-color: #f3d1af;
 }
 
-button{
-    border: 2px solid powderblue;
-    margin: 50px;
-    background-color: rgb(70, 58, 8);
+img{
+    width: 300;
+    height: 300;
 }
