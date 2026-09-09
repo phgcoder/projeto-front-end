@@ -1,9 +1,47 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3d1af;
+    background-color: #ddbb99;
 }
 
 img{
+    background-color: brown;
     width: 300;
     height: 300;
+}
+
+/* seção do video */
+.secao-video{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px; 
+    text-align: center;
+}
+
+/* titulo da seção */
+.secao-video h2{
+    margin-bottom: 10px;
+}
+
+/* texto de apresentação */
+.secao-video > p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* player de video */
+.secao-video video{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #000;
+}
+
+/* informação sobre o formato */
+#status-video {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
