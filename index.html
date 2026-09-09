@@ -9,29 +9,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="imagens/ChatGPT Image 31 de ago. de 2026, 20_26_06.png" width="300" height="300" alt="logo da  central livro">
-        </div>
-        <section>
-            <div>
-                <h1>central livros</h1>
+    <header class="cabecalho">
+
+        <div class="cabecalho-topo">
+
+            <div class="logo-container">
+                <img 
+                    src="imagens/ChatGPT Image 31 de ago. de 2026, 20_26_06.png"
+                    alt="Logo da Central Livro"
+                >
             </div>
-            <div>
-                <p>Na Central Livro, você encontra histórias para todos os momentos. Explore nosso catálogo de livros, descubra novos autores e encontre sua próxima grande leitura em um só lugar — sua história começa aqui.</p>
+
+            <div class="apresentacao">
+                <h1>Central Livro</h1>
+
+                <p>
+                    Na Central Livro, você encontra histórias para todos os momentos.
+                    Explore nosso catálogo, descubra novos autores e encontre sua
+                    próxima grande leitura.
+                </p>
             </div>
-        </section>
-        <div>
-            <nav>
-                <a href="#fantasia">fantasia</a>               
-                <a href="#ação">ação</a>               
-                <a href="#nacional">nacional</a>               
-                <a href="#romances">romances</a>                
-                <a href="#terror">terror</a> 
-                <a href="#tecnologia">tecnologia</a>   
-            </nav>
+
         </div>
+
+        <nav class="menu-navegacao" aria-label="Categorias de livros">
+
+            <a href="#fantasia">Fantasia</a>
+            <a href="#acao">Ação</a>
+            <a href="#nacional">Nacional</a>
+            <a href="#romances">Romances</a>
+            <a href="#terror">Terror</a>
+            <a href="#tecnologia">Tecnologia</a>
+
+        </nav>
+
     </header>
+
 
     <main>
         <section class="livros-destaque">
@@ -50,7 +63,7 @@
             viewBox="0 0 400 250"
             role="img"
             aria-labelledby="titulo-svg descricao-svg">
-            
+
             <title id="titulo-svg">Livro aberto</title>
 
             <desc id="descricao-svg">
@@ -116,9 +129,324 @@
             </div>
         </section>
 
-        <section>
-            <h2>categorias</h2>
+        <section class="catalogo" id="catalogo">
+
+    <div class="titulo-catalogo">
+        <h2>Catálogo</h2>
+
+        <p>
+            Explore nossa coleção e escolha sua próxima leitura.
+        </p>
+    </div>
+
+
+    <!-- FANTASIA -->
+    <section class="categoria" id="fantasia">
+
+        <div class="categoria-cabecalho">
+            <h3>Fantasia</h3>
+            <span>Explore mundos extraordinários</span>
+        </div>
+
+        <div class="livros-grid">
+
+            <article class="livro-card">
+                <img src="imagens/livro-fantasia-1.jpg" alt="Capa do livro O Hobbit">
+                <div class="livro-info">
+                    <h4>O Hobbit</h4>
+                    <p>J.R.R. Tolkien</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-fantasia-2.jpg" alt="Capa de um livro de fantasia">
+                <div class="livro-info">
+                    <h4>O Nome do Vento</h4>
+                    <p>Patrick Rothfuss</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-fantasia-3.jpg" alt="Capa de um livro de fantasia">
+                <div class="livro-info">
+                    <h4>Harry Potter</h4>
+                    <p>J.K. Rowling</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-fantasia-4.jpg" alt="Capa de um livro de fantasia">
+                <div class="livro-info">
+                    <h4>As Crônicas de Nárnia</h4>
+                    <p>C. S. Lewis</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- AÇÃO -->
+    <section class="categoria" id="acao">
+
+        <div class="categoria-cabecalho">
+            <h3>Ação</h3>
+            <span>Histórias cheias de aventura</span>
+        </div>
+
+        <div class="livros-grid">
+
+            <article class="livro-card">
+                <img src="imagens/livro-acao-1.jpg" alt="Capa de um livro de ação">
+                <div class="livro-info">
+                    <h4>Livro de Ação 1</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-acao-2.jpg" alt="Capa de um livro de ação">
+                <div class="livro-info">
+                    <h4>Livro de Ação 2</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-acao-3.jpg" alt="Capa de um livro de ação">
+                <div class="livro-info">
+                    <h4>Livro de Ação 3</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-acao-4.jpg" alt="Capa de um livro de ação">
+                <div class="livro-info">
+                    <h4>Livro de Ação 4</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- NACIONAL -->
+    <section class="categoria" id="nacional">
+
+        <div class="categoria-cabecalho">
+            <h3>Nacional</h3>
+            <span>Autores e histórias brasileiras</span>
+        </div>
+
+        <div class="livros-grid">
+
+            <article class="livro-card">
+                <img src="imagens/livro-nacional-1.jpg" alt="Capa de livro nacional">
+                <div class="livro-info">
+                    <h4>Livro Nacional 1</h4>
+                    <p>Autor brasileiro</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-nacional-2.jpg" alt="Capa de livro nacional">
+                <div class="livro-info">
+                    <h4>Livro Nacional 2</h4>
+                    <p>Autor brasileiro</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-nacional-3.jpg" alt="Capa de livro nacional">
+                <div class="livro-info">
+                    <h4>Livro Nacional 3</h4>
+                    <p>Autor brasileiro</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-nacional-4.jpg" alt="Capa de livro nacional">
+                <div class="livro-info">
+                    <h4>Livro Nacional 4</h4>
+                    <p>Autor brasileiro</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROMANCES -->
+    <section class="categoria" id="romances">
+
+        <div class="categoria-cabecalho">
+            <h3>Romances</h3>
+            <span>Histórias para se apaixonar</span>
+        </div>
+
+        <div class="livros-grid">
+
+            <article class="livro-card">
+                <img src="imagens/livro-romance-1.jpg" alt="Capa de livro de romance">
+                <div class="livro-info">
+                    <h4>Romance 1</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-romance-2.jpg" alt="Capa de livro de romance">
+                <div class="livro-info">
+                    <h4>Romance 2</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-romance-3.jpg" alt="Capa de livro de romance">
+                <div class="livro-info">
+                    <h4>Romance 3</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="imagens/livro-romance-4.jpg" alt="Capa de livro de romance">
+                <div class="livro-info">
+                    <h4>Romance 4</h4>
+                    <p>Autor</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </article>
+
+            </div>
+
         </section>
+
+
+        <!-- TERROR -->
+        <section class="categoria" id="terror">
+
+            <div class="categoria-cabecalho">
+                <h3>Terror</h3>
+                <span>Para quem gosta de sentir medo</span>
+            </div>
+
+            <div class="livros-grid">
+
+                <article class="livro-card">
+                    <img src="imagens/livro-terror-1.jpg" alt="Capa de livro de terror">
+                    <div class="livro-info">
+                        <h4>Terror 1</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-terror-2.jpg" alt="Capa de livro de terror">
+                    <div class="livro-info">
+                        <h4>Terror 2</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★☆</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-terror-3.jpg" alt="Capa de livro de terror">
+                    <div class="livro-info">
+                        <h4>Terror 3</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-terror-4.jpg" alt="Capa de livro de terror">
+                    <div class="livro-info">
+                        <h4>Terror 4</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★☆</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECNOLOGIA -->
+        <section class="categoria" id="tecnologia">
+
+            <div class="categoria-cabecalho">
+                <h3>Tecnologia</h3>
+                <span>Conhecimento para transformar o futuro</span>
+            </div>
+
+            <div class="livros-grid">
+
+                <article class="livro-card">
+                    <img src="imagens/livro-tecnologia-1.jpg" alt="Capa de livro de tecnologia">
+                    <div class="livro-info">
+                        <h4>Clean Code</h4>
+                        <p>Robert C. Martin</p>
+                        <span class="avaliacao">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-tecnologia-2.jpg" alt="Capa de livro de tecnologia">
+                    <div class="livro-info">
+                        <h4>O Programador Pragmático</h4>
+                        <p>Andrew Hunt</p>
+                        <span class="avaliacao">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-tecnologia-3.jpg" alt="Capa de livro de tecnologia">
+                    <div class="livro-info">
+                        <h4>JavaScript</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★☆</span>
+                    </div>
+                </article>
+
+                <article class="livro-card">
+                    <img src="imagens/livro-tecnologia-4.jpg" alt="Capa de livro de tecnologia">
+                    <div class="livro-info">
+                        <h4>HTML e CSS</h4>
+                        <p>Autor</p>
+                        <span class="avaliacao">★★★★★</span>
+                    </div>
+                </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
 
         <section class="secao-video">
             <h2>conheça nossa coleção</h2>
