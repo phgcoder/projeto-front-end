@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Na Central Livro, você encontra histórias para todos os momentos. Explore nosso catálogo de livros, descubra novos autores e encontre sua próxima grande leitura em um só lugar. Central Livro — sua história começa aqui.">
-    <link rel="shortcut icon" href="imagens/logo1.ico" image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo1.ico" type="image/x-icon">
     <title>central livro - livraria</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,8 +34,86 @@
     </header>
 
     <main>
-        <section>
-            <h2>Livros em destaque</h2>
+        <section class="livros-destaque">
+            <div class="destaque-conteudo">
+
+                <div class="destaque-texto">
+                    <h2>Livros em destaque</h2>
+
+                    <p>
+                        Descubra histórias que podem se tornar suas próximas favoritas.
+                    </p>
+                </div>
+
+                 <svg 
+            class="ilustracao-livro"
+            viewBox="0 0 400 250"
+            role="img"
+            aria-labelledby="titulo-svg descricao-svg">
+            
+            <title id="titulo-svg">Livro aberto</title>
+
+            <desc id="descricao-svg">
+                Ilustração de um livro aberto representando a coleção da Central Livro.
+            </desc>
+
+            <!-- Página esquerda -->
+            <path
+                class="pagina pagina-esquerda"
+                d="M200 70
+                   C160 45, 110 40, 55 55
+                   L55 190
+                   C110 175, 160 180, 200 205
+                   Z"
+            />
+
+            <!-- Página direita -->
+            <path
+                class="pagina pagina-direita"
+                d="M200 70
+                   C240 45, 290 40, 345 55
+                   L345 190
+                   C290 175, 240 180, 200 205
+                   Z"
+            />
+
+            <!-- Linha central do livro -->
+            <line
+                class="linha-central"
+                x1="200"
+                y1="70"
+                x2="200"
+                y2="205"
+            />
+
+            <!-- Linhas da página esquerda -->
+            <line class="linha-texto" x1="80" y1="90" x2="170" y2="105" />
+            <line class="linha-texto" x1="80" y1="115" x2="170" y2="125" />
+            <line class="linha-texto" x1="80" y1="140" x2="170" y2="148" />
+
+            <!-- Linhas da página direita -->
+            <line class="linha-texto" x1="230" y1="105" x2="320" y2="90" />
+            <line class="linha-texto" x1="230" y1="125" x2="320" y2="115" />
+            <line class="linha-texto" x1="230" y1="148" x2="320" y2="140" />
+
+            <!-- Estrela decorativa -->
+            <path
+                class="estrela"
+                d="M200 25
+                   L206 42
+                   L224 42
+                   L209 53
+                   L215 70
+                   L200 60
+                   L185 70
+                   L191 53
+                   L176 42
+                   L194 42
+                   Z"
+            />
+
+        </svg>
+            </div>
         </section>
 
         <section>

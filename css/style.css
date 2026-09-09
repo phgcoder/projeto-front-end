@@ -3,10 +3,10 @@ body{
     background-color: #ddbb99;
 }
 
-img{
+img {
     background-color: brown;
-    width: 300;
-    height: 300;
+    width: 300px;
+    height: 300px;
 }
 
 /* seção do video */
@@ -44,4 +44,77 @@ img{
     margin-top: 15px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+/* seção de livros em destaque */
+.livros-destaque {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+/* conteúdo da seção */
+.destaque-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* texto */
+.destaque-texto {
+    flex: 1;
+}
+
+.destaque-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.destaque-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* SVG */
+.ilustracao-livro {
+    width: 400px;
+    max-width: 45%;
+    height: auto;
+}
+
+/* páginas do livro */
+.pagina {
+    fill: #fff8e7;
+    stroke: #5c3b28;
+    stroke-width: 4;
+}
+
+/* linha central */
+.linha-central {
+    stroke: #5c3b28;
+    stroke-width: 4;
+}
+
+/* linhas que representam o texto */
+.linha-texto {
+    stroke: #b89570;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+/* estrela */
+.estrela {
+    fill: #c9822b;
+    stroke: #5c3b28;
+    stroke-width: 3;
+}
+
+/* efeito ao passar o mouse */
+.ilustracao-livro {
+    transition: transform 0.3s ease;
+}
+
+.ilustracao-livro:hover {
+    transform: translateY(-8px);
 }
