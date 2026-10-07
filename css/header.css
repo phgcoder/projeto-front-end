@@ -1,0 +1,68 @@
+/* ==================================================
+   CABEÇALHO
+   ================================================== */
+
+.cabecalho {
+    background: linear-gradient(
+        135deg,
+        #241914,
+        #4b2d20
+    );
+
+    border-bottom: 1px solid #6e4935;
+}
+
+
+/* parte superior do cabeçalho */
+
+.cabecalho-topo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 40px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* logo */
+
+.logo-container img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    background-color: #7b3f25;
+
+    border: 5px solid #c98b55;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* apresentação */
+
+.apresentacao {
+    max-width: 700px;
+}
+
+.apresentacao h1 {
+    font-size: 3rem;
+    color: #f0c18b;
+
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    color: #d9c8ba;
+
+    font-size: 1.05rem;
+}
+
+
+

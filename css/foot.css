@@ -1,0 +1,38 @@
+/* ==================================================
+   RODAPÉ
+   ================================================== */
+
+footer {
+    margin-top: 60px;
+
+    padding: 40px 20px;
+
+    background-color: #120e0c;
+
+    border-top: 1px solid #493125;
+
+    text-align: center;
+}
+
+
+footer section {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+
+footer a {
+    color: #c9822b;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+footer a:hover {
+    color: #f0c18b;
+}

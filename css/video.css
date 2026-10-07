@@ -1,0 +1,55 @@
+/* ==================================================
+   VÍDEO
+   ================================================== */
+
+.secao-video {
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    padding: 40px 30px;
+
+    text-align: center;
+}
+
+
+.secao-video h2 {
+    color: #f0c18b;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+
+.secao-video > p {
+    color: #bca99b;
+
+    margin-bottom: 25px;
+}
+
+
+.secao-video video {
+    display: block;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    background-color: #000;
+}
+
+
+#status-video {
+    margin-top: 15px;
+
+    font-size: 0.9rem;
+
+    opacity: 0.8;
+}

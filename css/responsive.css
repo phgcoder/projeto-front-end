@@ -1,0 +1,124 @@
+/* ==================================================
+   RESPONSIVIDADE
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .cabecalho-topo {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .apresentacao h1 {
+        font-size: 2.4rem;
+    }
+
+
+    .destaque-conteudo {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .destaque-texto p {
+        margin: 0 auto;
+    }
+
+
+    .ilustracao-livro {
+        max-width: 80%;
+
+        width: 350px;
+    }
+
+
+    .livros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .cabecalho-topo {
+        padding: 30px 20px;
+    }
+
+
+    .logo-container img {
+        width: 140px;
+
+        height: 140px;
+    }
+
+
+    .apresentacao h1 {
+        font-size: 2rem;
+    }
+
+
+    .menu-navegacao {
+        justify-content: flex-start;
+    }
+
+
+    .livros-destaque {
+        margin: 30px 15px;
+
+        padding: 30px 20px;
+    }
+
+
+    .destaque-texto h2 {
+        font-size: 2rem;
+    }
+
+
+    .ilustracao-livro {
+        max-width: 100%;
+    }
+
+
+    .catalogo {
+        padding: 20px 15px;
+    }
+
+
+    .categoria-cabecalho {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .livros-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .livro-card > img {
+        height: 230px;
+    }
+
+
+    .livro-info {
+        padding: 12px;
+    }
+
+
+    .livro-info h4 {
+        font-size: 0.95rem;
+    }
+
+
+    .secao-video {
+        padding: 30px 15px;
+    }
+
+}

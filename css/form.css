@@ -1,0 +1,105 @@
+/* ==================================================
+   FORMULÁRIO
+   ================================================== */
+
+main > section:last-child {
+    max-width: 800px;
+
+    margin: 60px auto;
+
+    padding: 40px 30px;
+}
+
+
+main > section:last-child h2 {
+    color: #f0c18b;
+
+    margin-bottom: 25px;
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+fieldset {
+    border: 1px solid #624332;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    background-color: #241914;
+}
+
+
+legend {
+    color: #e4aa6c;
+
+    padding: 0 10px;
+
+    font-weight: bold;
+}
+
+
+label {
+    color: #d9c8ba;
+
+    margin-bottom: 5px;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #6b4935;
+
+    border-radius: 8px;
+
+    background-color: #302119;
+
+    color: #f5eee6;
+
+    font-size: 1rem;
+}
+
+
+input:focus,
+select:focus {
+    outline: 2px solid #c9822b;
+
+    border-color: #c9822b;
+}
+
+
+input[type="radio"] {
+    width: auto;
+}
+
+
+input[type="submit"] {
+    background-color: #c9822b;
+
+    color: #1b1512;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #e0a04e;
+}

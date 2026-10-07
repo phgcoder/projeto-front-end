@@ -1,0 +1,52 @@
+/* ==================================================
+   SVG
+   ================================================== */
+
+.ilustracao-livro {
+    width: 400px;
+
+    max-width: 45%;
+
+    height: auto;
+
+    transition: transform 0.3s ease;
+}
+
+
+.ilustracao-livro:hover {
+    transform: translateY(-8px);
+}
+
+
+.pagina {
+    fill: #fff8e7;
+
+    stroke: #5c3b28;
+
+    stroke-width: 4;
+}
+
+
+.linha-central {
+    stroke: #5c3b28;
+
+    stroke-width: 4;
+}
+
+
+.linha-texto {
+    stroke: #b89570;
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+}
+
+
+.estrela {
+    fill: #c9822b;
+
+    stroke: #5c3b28;
+
+    stroke-width: 3;
+}
