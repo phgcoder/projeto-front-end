@@ -6,7 +6,7 @@
 
     .cabecalho-topo {
         flex-direction: column;
-
+        gap: 25px;
         text-align: center;
     }
 
@@ -18,7 +18,6 @@
 
     .destaque-conteudo {
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -30,8 +29,13 @@
 
     .ilustracao-livro {
         max-width: 80%;
-
+        flex-basis: auto;
         width: 350px;
+    }
+
+    .livros-destaque {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
 
@@ -51,7 +55,6 @@
 
     .logo-container img {
         width: 140px;
-
         height: 140px;
     }
 
@@ -63,6 +66,8 @@
 
     .menu-navegacao {
         justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
     }
 
 
@@ -84,20 +89,19 @@
 
 
     .catalogo {
-        padding: 20px 15px;
+        padding: 20px 15px 40px;
     }
 
 
     .categoria-cabecalho {
         flex-direction: column;
-
+        align-items: flex-start;    
         gap: 0;
     }
 
 
     .livros-grid {
-        grid-template-columns: repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
 
@@ -114,6 +118,7 @@
 
     .livro-info h4 {
         font-size: 0.95rem;
+        overflow-wrap: anywhere;
     }
 
 
@@ -121,4 +126,27 @@
         padding: 30px 15px;
     }
 
+    .formulario-container {
+        margin: 30px 15px;
+        padding: 25px 15px;
+    }
+
+    .formulario-container fieldset {
+        padding: 18px 14px;
+    }
+}
+
+/* Respeita a preferência do usuário por menos animações */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }

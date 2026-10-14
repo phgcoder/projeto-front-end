@@ -3,13 +3,11 @@
    ================================================== */
 
 .ilustracao-livro {
+   flex: 0 1 400px;
     width: 400px;
-
     max-width: 45%;
-
     height: auto;
-
-    transition: transform 0.3s ease;
+    transition: transform var(--transicao-padrao);
 }
 
 
@@ -20,33 +18,26 @@
 
 .pagina {
     fill: #fff8e7;
-
     stroke: #5c3b28;
-
     stroke-width: 4;
 }
 
 
 .linha-central {
     stroke: #5c3b28;
-
     stroke-width: 4;
 }
 
 
 .linha-texto {
     stroke: #b89570;
-
     stroke-width: 4;
-
     stroke-linecap: round;
 }
 
 
 .estrela {
-    fill: #c9822b;
-
+     fill: var(--cor-acento);
     stroke: #5c3b28;
-
     stroke-width: 3;
 }

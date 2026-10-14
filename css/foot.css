@@ -4,35 +4,28 @@
 
 footer {
     margin-top: 60px;
-
     padding: 40px 20px;
-
-    background-color: #120e0c;
-
-    border-top: 1px solid #493125;
-
+    border-top: 1px solid var(--cor-borda);
+    background-color: var(--cor-fundo-escuro);
     text-align: center;
 }
 
 
 footer section {
     display: flex;
-
     justify-content: center;
-
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 
 footer a {
-    color: #c9822b;
-
+    color: var(--cor-acento);
     text-decoration: none;
-
-    transition: color 0.3s ease;
+    transition: color var(--transicao-padrao);
 }
 
 
 footer a:hover {
-    color: #f0c18b;
+    color: var(--cor-destaque);
 }

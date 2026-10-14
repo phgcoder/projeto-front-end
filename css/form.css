@@ -2,104 +2,82 @@
    FORMULÁRIO
    ================================================== */
 
-main > section:last-child {
+.formulario-container {
     max-width: 800px;
-
     margin: 60px auto;
-
     padding: 40px 30px;
 }
 
-
-main > section:last-child h2 {
-    color: #f0c18b;
-
+.formulario-container h2 {
     margin-bottom: 25px;
+    color: var(--cor-destaque);
 }
 
-
-form {
+.formulario-container form {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
 }
 
-
-fieldset {
-    border: 1px solid #624332;
-
-    border-radius: 12px;
-
+.formulario-container fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
     padding: 25px;
-
-    background-color: #241914;
+    border: 1px solid #624332;
+    border-radius: var(--raio-card);
+    background-color: var(--cor-superficie);
 }
 
-
-legend {
-    color: #e4aa6c;
-
+.formulario-container legend {
     padding: 0 10px;
-
+    color: #e4aa6c;
     font-weight: bold;
 }
 
-
-label {
-    color: #d9c8ba;
-
+.formulario-container label {
+    display: block;
     margin-bottom: 5px;
+    color: var(--cor-texto-suave);
 }
 
-
-input,
-select {
+.formulario-container input:not([type="radio"]):not([type="submit"]),
+.formulario-container select {
     width: 100%;
-
     padding: 12px;
-
     border: 1px solid #6b4935;
-
     border-radius: 8px;
-
     background-color: #302119;
-
-    color: #f5eee6;
-
-    font-size: 1rem;
+    color: var(--cor-texto);
+    font: inherit;
 }
 
-
-input:focus,
-select:focus {
-    outline: 2px solid #c9822b;
-
-    border-color: #c9822b;
+.formulario-container input:focus,
+.formulario-container select:focus {
+    border-color: var(--cor-acento);
 }
 
-
-input[type="radio"] {
+.formulario-container input[type="radio"] {
     width: auto;
+    margin-right: 6px;
+    accent-color: var(--cor-acento);
 }
 
-
-input[type="submit"] {
-    background-color: #c9822b;
-
-    color: #1b1512;
-
+.formulario-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
     border: none;
-
+    border-radius: 8px;
+    background-color: var(--cor-acento);
+    color: var(--cor-fundo);
+    font-size: 1rem;
     font-weight: bold;
-
     cursor: pointer;
-
-    transition: background-color 0.3s ease;
+    transition: background-color var(--transicao-padrao);
 }
 
-
-input[type="submit"]:hover {
-    background-color: #e0a04e;
+.formulario-container input[type="submit"]:hover {
+    background-color: var(--cor-acento-hover);
 }
+

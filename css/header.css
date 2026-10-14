@@ -1,26 +1,23 @@
+@import url(style.css);
+
 /* ==================================================
    CABEÇALHO
    ================================================== */
 
 .cabecalho {
-    background: linear-gradient(
-        135deg,
-        #241914,
-        #4b2d20
-    );
-
-    border-bottom: 1px solid #6e4935;
+    background: linear-gradient(135deg, #241914, #4b2d20);
+    border-bottom: 1px solid var(--cor-borda-clara);
 }
 
 
 /* parte superior do cabeçalho */
 
 .cabecalho-topo {
-    max-width: 1200px;
+     max-width: var(--largura-conteudo);
     margin: 0 auto;
-
     padding: 40px 30px;
 
+    /* Flexbox: organiza logo e apresentação em um eixo */
     display: flex;
     align-items: center;
     gap: 50px;
@@ -30,17 +27,13 @@
 /* logo */
 
 .logo-container img {
+    display: block;
     width: 180px;
     height: 180px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     background-color: #7b3f25;
-
     border: 5px solid #c98b55;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -52,15 +45,13 @@
 }
 
 .apresentacao h1 {
-    font-size: 3rem;
-    color: #f0c18b;
-
     margin-bottom: 15px;
+    font-size: 3rem;
+    color: var(--cor-destaque)
 }
 
 .apresentacao p {
-    color: #d9c8ba;
-
+    color: var(--cor-texto-suave);
     font-size: 1.05rem;
 }
 
