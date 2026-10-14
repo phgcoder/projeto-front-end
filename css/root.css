@@ -1,0 +1,21 @@
+:root {
+    /* Cores da identidade visual da Central Livro */
+    --cor-fundo: #1b1512;
+    --cor-fundo-escuro: #120e0c;
+    --cor-superficie: #241914;
+    --cor-card: #2a1d17;
+    --cor-borda: #493125;
+    --cor-borda-clara: #6e4935;
+    --cor-texto: #f5eee6;
+    --cor-texto-suave: #d9c8ba;
+    --cor-texto-secundario: #a99587;
+    --cor-destaque: #f0c18b;
+    --cor-acento: #c9822b;
+    --cor-acento-hover: #e0a04e;
+
+    --largura-conteudo: 1200px;
+    --raio-card: 12px;
+    --raio-secao: 25px;
+    --sombra-card: 0 15px 30px rgba(0, 0, 0, 0.4);
+    --transicao-padrao: 0.3s ease;
+}
