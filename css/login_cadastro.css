@@ -1,0 +1,297 @@
+@import url(root.css);
+
+/* ==================================================
+   10. PÁGINAS DE LOGIN E CADASTRO
+   ================================================== */
+
+
+/* ESTRUTURA GERAL */
+
+body.pagina-autenticacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 30px 16px;
+
+    background:
+        radial-gradient(circle at top, #493020 0, transparent 45%),
+        var(--cor-fundo);
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.auth-main {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+
+
+/* CARTÃO DO FORMULÁRIO */
+
+.auth-card {
+    width: 100%;
+    padding: 35px;
+
+    background: linear-gradient(
+        145deg,
+        var(--cor-superficie),
+        var(--cor-card)
+    );
+
+    border: 1px solid var(--cor-borda-clara);
+    border-radius: var(--raio-secao);
+
+    box-shadow: var(--sombra-card);
+}
+
+
+/* TÍTULO */
+
+.auth-marca {
+    margin-bottom: 8px;
+
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* DESCRIÇÃO */
+
+.auth-descricao {
+    margin-bottom: 28px;
+
+    color: var(--cor-texto-suave);
+    text-align: center;
+}
+
+
+/* FORMULÁRIO */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* FIELDSET */
+
+.auth-form fieldset {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+    min-width: 0;
+    padding: 22px;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-card);
+}
+
+
+/* LEGEND */
+
+.auth-form legend {
+    padding: 0 10px;
+
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+
+/* LABEL */
+
+.auth-form label {
+    color: var(--cor-texto-suave);
+    font-size: 0.95rem;
+}
+
+
+/* CAMPOS DE TEXTO */
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+
+    width: 100%;
+    min-height: 46px;
+
+    padding: 11px 13px;
+
+    border: 1px solid var(--cor-borda-clara);
+    border-radius: 8px;
+
+    outline: none;
+
+    background-color: #302119;
+    color: var(--cor-texto);
+
+    font: inherit;
+
+    transition:
+        border-color var(--transicao-padrao),
+        box-shadow var(--transicao-padrao);
+}
+
+
+/* TEXTO DOS PLACEHOLDERS */
+
+.auth-form input::placeholder {
+    color: var(--cor-texto-secundario);
+}
+
+
+/* EFEITO AO SELECIONAR UM CAMPO */
+
+.auth-form input[type="text"]:focus,
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus {
+
+    border-color: var(--cor-acento-hover);
+
+    box-shadow: 0 0 0 3px rgba(201, 130, 43, 0.18);
+}
+
+
+/* OPÇÕES DO LOGIN */
+
+.auth-opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 2px 0;
+}
+
+
+/* CHECKBOX */
+
+.auth-checkbox {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+
+.auth-checkbox input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: var(--cor-acento);
+}
+
+
+/* LINKS */
+
+.auth-link {
+    color: var(--cor-destaque);
+
+    text-decoration: none;
+
+    transition: color var(--transicao-padrao);
+}
+
+
+.auth-link:hover {
+    color: var(--cor-acento-hover);
+    text-decoration: underline;
+}
+
+
+/* FOCO DOS LINKS E BOTÕES */
+
+.auth-link:focus-visible,
+.auth-botao:focus-visible {
+
+    outline: 3px solid var(--cor-acento-hover);
+    outline-offset: 3px;
+}
+
+
+/* BOTÃO PRINCIPAL */
+
+.auth-botao {
+    width: 100%;
+    min-height: 48px;
+
+    margin-top: 8px;
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--cor-acento);
+    color: var(--cor-fundo-escuro);
+
+    font: inherit;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transicao-padrao),
+        transform var(--transicao-padrao);
+}
+
+
+/* EFEITO DO BOTÃO */
+
+.auth-botao:hover {
+    transform: translateY(-2px);
+    background-color: var(--cor-acento-hover);
+}
+
+
+/* TEXTO INFERIOR */
+
+.auth-rodape {
+    margin-top: 22px;
+
+    color: var(--cor-texto-suave);
+    text-align: center;
+
+    font-size: 0.95rem;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE — LOGIN E CADASTRO
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    body.pagina-autenticacao {
+        padding: 18px 12px;
+    }
+
+    .auth-card {
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+
+    .auth-marca {
+        font-size: 1.7rem;
+    }
+
+    .auth-form fieldset {
+        padding: 18px 14px;
+    }
+
+    .auth-opcoes {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Crie sua conta na Central-Livro.">
+
+    <link rel="shortcut icon" href="imagens/logo1.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Cadastro | Central-Livro</title>
+</head>
+
+<body class="pagina-autenticacao">
+     /* configurações das páginas de autenticação */
+
+    <main class="auth-main">
+
+        <section class="auth-card" aria-labelledby="titulo-cadastro">
+
+            <h1 class="auth-marca" id="titulo-cadastro">
+                Central-Livro
+            </h1>
+
+            <p class="auth-descricao">
+                Crie sua conta e faça parte da nossa comunidade de leitores.
+            </p>
+
+            <form class="auth-form" action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Dados para cadastro</legend>
+
+                    <label for="nome">Nome</label>
+
+                    <input
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        autocomplete="given-name"
+                        required
+                    >
+
+                    <label for="sobrenome">Sobrenome</label>
+
+                    <input
+                        type="text"
+                        name="sobrenome"
+                        id="sobrenome"
+                        placeholder="Digite seu sobrenome"
+                        autocomplete="family-name"
+                        required
+                    >
+
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="exemplo@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        name="senha"
+                        id="senha"
+                        placeholder="Crie uma senha"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button class="auth-botao" type="submit">
+                        Criar minha conta
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+            <p class="auth-rodape">
+                Já tem uma conta?
+
+                <a class="auth-link" href="login.html">
+                    Faça login
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
