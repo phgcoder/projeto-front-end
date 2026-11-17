@@ -1,44 +1,164 @@
-@import url(root.css);
+@import url("root.css");
 
 /* ==================================================
-   VÍDEO
-   ================================================== */
+   SEÇÕES DE VÍDEO
+================================================== */
 
 .secao-video {
+
     max-width: 1000px;
-    margin: 60px auto;
-    padding: 40px 30px;
+    margin: 55px auto;
+    padding: 35px 30px;
+
     text-align: center;
+
+    background-color: rgba(53, 34, 25, 0.45);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 18px;
+
 }
 
+
+/* ==================================================
+   TÍTULOS
+================================================== */
 
 .secao-video h2 {
-    margin-bottom: 10px;
+
+    margin-bottom: 12px;
+
     color: var(--cor-destaque);
+
     font-size: 2rem;
+
 }
 
+
+/* ==================================================
+   DESCRIÇÕES
+================================================== */
 
 .secao-video > p {
-    margin-bottom: 25px;
+
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
     color: #bca99b;
+
+    line-height: 1.7;
+
 }
 
+
+/* ==================================================
+   ELEMENTO DE VÍDEO
+================================================== */
 
 .secao-video video {
+
     display: block;
+
     width: 100%;
     max-width: 800px;
+
+    aspect-ratio: 16 / 9;
+
     margin: 0 auto;
+
+    object-fit: cover;
+
     border-radius: 15px;
+
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
     background-color: #000;
+
 }
 
 
-#status-video {
-    margin-top: 15px;
+/* ==================================================
+   PERSONALIZAÇÃO DAS SEÇÕES
+================================================== */
+
+/* Primeiro vídeo: introdução */
+
+.secao-video-abertura {
+
+    margin-top: 35px;
+
+}
+
+
+/* Segundo vídeo: pausa entre categorias */
+
+.secao-video-leitura {
+
+    max-width: 850px;
+
+    margin: 55px auto;
+
+    background-color: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+}
+
+
+/* Terceiro vídeo: encerramento do catálogo */
+
+.secao-video-descoberta {
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+
+/* ==================================================
+   MENSAGEM DE SUPORTE
+================================================== */
+
+.status-video {
+
+    margin-top: 15px !important;
+
     font-size: 0.9rem;
+
+    color: var(--cor-acento);
+
     opacity: 0.8;
+
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .secao-video {
+
+        margin: 35px 15px;
+
+        padding: 25px 18px;
+
+    }
+
+    .secao-video h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+    .secao-video video {
+
+        border-radius: 10px;
+
+    }
 
 }

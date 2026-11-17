@@ -10,39 +10,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="cabecalho" id="inicio">
+   <header class="cabecalho" id="inicio">
 
         <div class="cabecalho-topo">
 
-            <div class="logo-container">
-                <img 
-                    src="img/logo1.ico"
-                    alt="Logo da Central Livro"
-                >
-            </div>
+            <!-- Identidade da marca -->
+            <a href="#inicio" class="logo-container" aria-label="Central Livro - Início">
 
+                <img
+                    src="img/logo1.ico"
+                    alt=""
+                >
+
+            </a>
+
+            <!-- Nome e apresentação -->
             <div class="apresentacao">
+
                 <h1>Central Livro</h1>
 
+                <span class="slogan">
+                    Sua história começa aqui.
+                </span>
+
                 <p>
-                    Na Central Livro, você encontra histórias para todos os momentos.
-                    Explore nosso catálogo, descubra novos autores e encontre sua
-                    próxima grande leitura.
+                    Um universo de histórias, conhecimento e descobertas.
+                    Encontre sua próxima leitura e deixe-se levar por novas experiências.
                 </p>
+
             </div>
 
         </div>
-        
+
     </header>
 
-    <!-- Barra principal de navegação -->
-    <nav class="menu-navegacao" aria-label="Categorias de livros">
+    
+    <!-- ==================================================
+    MENU PRINCIPAL DE NAVEGAÇÃO
+    Organizado por gêneros e subgêneros literários.
+    ================================================== -->
 
-        <!-- barra principal de navegação-->
-        <a href="#inicio" class="marca-navegacao">Central Livro</a>
+    <nav class="menu-navegacao" aria-label="Navegação principal">
 
-        <!--botão hamburguer para telas estreitas-->
-        <button 
+        <!-- Identificação da livraria -->
+        <a href="#inicio" class="marca-navegacao">
+            Central Livro
+        </a>
+
+        <!-- Botão de abertura do menu em telas menores -->
+        <button
             class="menu-hamburguer"
             type="button"
             aria-label="Abrir menu de navegação"
@@ -54,45 +70,85 @@
             <span></span>
         </button>
 
-        <!-- Links de navegação -->
+        <!-- Lista principal de gêneros -->
         <ul class="lista-navegacao" id="lista-navegacao">
 
-            <li>
-                <a href="#fantasia" class="ativo">Fantasia</a>
-            </li>
-
-            <li>
-                <a href="#acao">Ação</a>
-            </li>
-
-            <li>
-                <a href="#nacional">Nacional</a>
-            </li>
-
+            <!-- Fantasia -->
             <li class="item-dropdown">
-
-                <a href="#romances" class="link-dropdown">
-                    Romances
-                    <span aria-hidden="true">▾</span>
+                <a href="#fantasia" class="link-dropdown">
+                    Fantasia <span aria-hidden="true">▾</span>
                 </a>
 
-                <!-- Submenu -->
                 <ul class="submenu">
-
-                    <li>
-                        <a href="#romances">Todos os romances</a>
-                    </li>
-
-                    <li>
-                        <a href="#terror">Suspense e terror</a>
-                    </li>
-
-                    <li>
-                        <a href="#tecnologia">Livros de tecnologia</a>
-                    </li>
-
+                    <li><a href="#fantasia">Fantasia épica</a></li>
+                    <li><a href="#fantasia">Fantasia urbana</a></li>
+                    <li><a href="#fantasia">Fantasia sombria</a></li>
                 </ul>
+            </li>
 
+            <!-- Romance -->
+            <li class="item-dropdown">
+                <a href="#romances" class="link-dropdown">
+                    Romance <span aria-hidden="true">▾</span>
+                </a>
+
+                <ul class="submenu">
+                    <li><a href="#romances">Romance contemporâneo</a></li>
+                    <li><a href="#romances">Romance histórico</a></li>
+                    <li><a href="#romances">Romance juvenil</a></li>
+                </ul>
+            </li>
+
+            <!-- Ação e aventura -->
+            <li class="item-dropdown">
+                <a href="#acao" class="link-dropdown">
+                    Ação e aventura <span aria-hidden="true">▾</span>
+                </a>
+
+                <ul class="submenu">
+                    <li><a href="#acao">Aventura</a></li>
+                    <li><a href="#acao">Espionagem</a></li>
+                    <li><a href="#acao">Ação policial</a></li>
+                </ul>
+            </li>
+
+            <!-- Suspense e terror -->
+            <li class="item-dropdown">
+                <a href="#terror" class="link-dropdown">
+                    Suspense e terror <span aria-hidden="true">▾</span>
+                </a>
+
+                <ul class="submenu">
+                    <li><a href="#terror">Suspense psicológico</a></li>
+                    <li><a href="#terror">Terror sobrenatural</a></li>
+                    <li><a href="#terror">Mistério</a></li>
+                </ul>
+            </li>
+
+            <!-- Tecnologia -->
+            <li class="item-dropdown">
+                <a href="#tecnologia" class="link-dropdown">
+                    Tecnologia <span aria-hidden="true">▾</span>
+                </a>
+
+                <ul class="submenu">
+                    <li><a href="#tecnologia">Programação</a></li>
+                    <li><a href="#tecnologia">Desenvolvimento web</a></li>
+                    <li><a href="#tecnologia">Segurança digital</a></li>
+                </ul>
+            </li>
+
+            <!-- Literatura brasileira -->
+            <li class="item-dropdown">
+                <a href="#nacional" class="link-dropdown">
+                    Literatura brasileira <span aria-hidden="true">▾</span>
+                </a>
+
+                <ul class="submenu">
+                    <li><a href="#nacional">Clássicos brasileiros</a></li>
+                    <li><a href="#nacional">Literatura contemporânea</a></li>
+                    <li><a href="#nacional">Literatura regional</a></li>
+                </ul>
             </li>
 
         </ul>
@@ -101,100 +157,229 @@
 
 
    <main>
-        <section class="livros-destaque">
+        <!-- ==================================================
+            SEÇÃO DE DESTAQUE
+            Apresentação principal da Central Livro.
+        ================================================== -->
+
+        <section class="livros-destaque" aria-labelledby="titulo-destaque">
+
             <div class="destaque-conteudo">
 
+                <!-- Texto principal -->
                 <div class="destaque-texto">
-                    <h2>Livros em destaque</h2>
+
+                    <span class="destaque-etiqueta">
+                        SUA PRÓXIMA HISTÓRIA COMEÇA AQUI
+                    </span>
+
+                    <h2 id="titulo-destaque">
+                        Descubra histórias que
+                        <span>marcam para sempre.</span>
+                    </h2>
 
                     <p>
-                        Descubra histórias que podem se tornar suas próximas favoritas.
+                        Explore diferentes universos, conheça novos autores
+                        e encontre livros que combinam com você.
+                        Na Central Livro, sempre existe uma nova história
+                        esperando para ser descoberta.
                     </p>
+
+                    <a href="#catalogo" class="botao-destaque">
+                        Explorar catálogo
+                        <span aria-hidden="true">→</span>
+                    </a>
+
                 </div>
 
-                <svg 
-                    class="ilustracao-livro"
-                    viewBox="0 0 400 250"
-                    role="img"
-                    aria-labelledby="titulo-svg descricao-svg">
+                <!-- Ilustração -->
+                <div class="destaque-ilustracao">
 
-                    <title id="titulo-svg">Livro aberto</title>
+                    <svg
+                        class="ilustracao-livro"
+                        viewBox="0 0 400 250"
+                        role="img"
+                        aria-labelledby="titulo-svg descricao-svg"
+                    >
 
-                    <desc id="descricao-svg">
-                        Ilustração de um livro aberto representando a coleção da Central Livro.
-                    </desc>
+                        <title id="titulo-svg">Livro aberto</title>
 
-                    <!-- Página esquerda -->
-                    <path
-                        class="pagina pagina-esquerda"
-                        d="M200 70
-                        C160 45, 110 40, 55 55
-                        L55 190
-                        C110 175, 160 180, 200 205
-                        Z"
-                    />
+                        <desc id="descricao-svg">
+                            Ilustração de um livro aberto representando
+                            as possibilidades de leitura da Central Livro.
+                        </desc>
 
-                    <!-- Página direita -->
-                    <path
-                        class="pagina pagina-direita"
-                        d="M200 70
-                        C240 45, 290 40, 345 55
-                        L345 190
-                        C290 175, 240 180, 200 205
-                        Z"
-                    />
+                        <!-- Página esquerda -->
+                        <path
+                            class="pagina pagina-esquerda"
+                            d="M200 70
+                            C160 45, 110 40, 55 55
+                            L55 190
+                            C110 175, 160 180, 200 205
+                            Z"
+                        />
 
-                    <!-- Linha central do livro -->
-                    <line
-                        class="linha-central"
-                        x1="200"
-                        y1="70"
-                        x2="200"
-                        y2="205"
-                    />
+                        <!-- Página direita -->
+                        <path
+                            class="pagina pagina-direita"
+                            d="M200 70
+                            C240 45, 290 40, 345 55
+                            L345 190
+                            C290 175, 240 180, 200 205
+                            Z"
+                        />
 
-                    <!-- Linhas da página esquerda -->
-                    <line class="linha-texto" x1="80" y1="90" x2="170" y2="105" />
-                    <line class="linha-texto" x1="80" y1="115" x2="170" y2="125" />
-                    <line class="linha-texto" x1="80" y1="140" x2="170" y2="148" />
+                        <!-- Linha central -->
+                        <line
+                            class="linha-central"
+                            x1="200"
+                            y1="70"
+                            x2="200"
+                            y2="205"
+                        />
 
-                    <!-- Linhas da página direita -->
-                    <line class="linha-texto" x1="230" y1="105" x2="320" y2="90" />
-                    <line class="linha-texto" x1="230" y1="125" x2="320" y2="115" />
-                    <line class="linha-texto" x1="230" y1="148" x2="320" y2="140" />
+                        <!-- Linhas da página esquerda -->
+                        <line class="linha-texto" x1="80" y1="90" x2="170" y2="105" />
+                        <line class="linha-texto" x1="80" y1="115" x2="170" y2="125" />
+                        <line class="linha-texto" x1="80" y1="140" x2="170" y2="148" />
 
-                    <!-- Estrela decorativa -->
-                    <path
-                        class="estrela"
-                        d="M200 25
-                        L206 42
-                        L224 42
-                        L209 53
-                        L215 70
-                        L200 60
-                        L185 70
-                        L191 53
-                        L176 42
-                        L194 42
-                        Z"
-                    />
+                        <!-- Linhas da página direita -->
+                        <line class="linha-texto" x1="230" y1="105" x2="320" y2="90" />
+                        <line class="linha-texto" x1="230" y1="125" x2="320" y2="115" />
+                        <line class="linha-texto" x1="230" y1="148" x2="320" y2="140" />
 
-                </svg>
+                        <!-- Estrela decorativa -->
+                        <path
+                            class="estrela"
+                            d="M200 25
+                            L206 42
+                            L224 42
+                            L209 53
+                            L215 70
+                            L200 60
+                            L185 70
+                            L191 53
+                            L176 42
+                            L194 42
+                            Z"
+                        />
+
+                    </svg>
+
+                    <span class="texto-ilustracao">
+                        Um universo de possibilidades em cada página.
+                    </span>
+
+                </div>
+
             </div>
+
         </section>
+
+        <!-- ==================================================
+            VÍDEO 1 - APRESENTAÇÃO DA COLEÇÃO
+        ================================================== -->
+
+        <section class="secao-video secao-video-abertura">
+
+            <h2>Um universo de histórias</h2>
+
+            <p>
+                Cada livro guarda novas possibilidades.
+                Descubra histórias, conhecimentos e experiências
+                que esperam por você.
+            </p>
+
+            <video
+                controls
+                muted
+                loop
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="videos/pilha-de-livros.mp4"
+                    type="video/mp4"
+                >
+
+                <track
+                    kind="subtitles"
+                    src="videos/legendas-pilha.vtt"
+                    srclang="pt-BR"
+                    label="Português"
+                    default
+                >
+
+                <p>
+                    Seu navegador não suporta a reprodução deste vídeo.
+                </p>
+
+            </video>
+
+            <p class="status-video" aria-live="polite"></p>
+
+        </section>
+
+        <!-- ==================================================
+            BARRA DE PESQUISA DO CATÁLOGO
+            Permite localizar livros pelo título ou autor.
+            ================================================== -->
+
+        <section class="busca-livros" aria-labelledby="titulo-busca">
+
+            <div class="busca-conteudo">
+
+                <h2 id="titulo-busca">Encontre sua próxima leitura</h2>
+
+                <p>
+                    Pesquise por título ou autor e descubra seu próximo livro favorito.
+                </p>
+
+                <!-- Formulário utilizado exclusivamente para pesquisa local. -->
+                <form class="formulario-busca" id="formulario-busca">
+
+                    <label for="campo-busca" class="visualmente-oculto">
+                        Pesquisar livros
+                    </label>
+
+                    <input
+                        type="search"
+                        id="campo-busca"
+                        placeholder="Digite o nome do livro ou autor..."
+                        autocomplete="off"
+                    >
+
+                    <button type="submit">
+                        Pesquisar
+                    </button>
+
+                </form>
+
+                <!-- Mensagem atualizada pelo JavaScript durante a pesquisa. -->
+                <p id="resultado-busca" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+            CATÁLOGO DE LIVROS
+            ================================================== -->
 
         <section class="catalogo" id="catalogo">
 
             <div class="titulo-catalogo">
                 <h2>Catálogo</h2>
-
                 <p>
                     Explore nossa coleção e escolha sua próxima leitura.
                 </p>
             </div>
 
+            <!-- ==================================================
+                FANTASIA
+            ================================================== -->
 
-            <!-- FANTASIA -->
             <section class="categoria" id="fantasia">
 
                 <div class="categoria-cabecalho">
@@ -204,420 +389,671 @@
 
                 <div class="livros-grid">
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-fantasia-1.jpg" alt="Capa do livro O Hobbit">
+                    <a href="livro.html?livro=o-hobbit" class="livro-card">
+                        <img src="imagens/livro-fantasia-1.jpg"
+                            alt="Capa do livro O Hobbit, de J.R.R. Tolkien">
+
                         <div class="livro-info">
                             <h4>O Hobbit</h4>
                             <p>J.R.R. Tolkien</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-fantasia-2.jpg" alt="Capa de um livro de fantasia">
+                    <a href="livro.html?livro=nome-do-vento" class="livro-card">
+                        <img src="imagens/livro-fantasia-2.jpg"
+                            alt="Capa do livro O Nome do Vento, de Patrick Rothfuss">
+
                         <div class="livro-info">
                             <h4>O Nome do Vento</h4>
                             <p>Patrick Rothfuss</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-fantasia-3.jpg" alt="Capa de um livro de fantasia">
+                    <a href="livro.html?livro=harry-potter" class="livro-card">
+                        <img src="imagens/livro-fantasia-3.jpg"
+                            alt="Capa do livro Harry Potter, de J.K. Rowling">
+
                         <div class="livro-info">
                             <h4>Harry Potter</h4>
                             <p>J.K. Rowling</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-fantasia-4.jpg" alt="Capa de um livro de fantasia">
+                    <a href="livro.html?livro=cronicas-de-narnia" class="livro-card">
+                        <img src="imagens/livro-fantasia-4.jpg"
+                            alt="Capa do livro As Crônicas de Nárnia, de C. S. Lewis">
+
                         <div class="livro-info">
                             <h4>As Crônicas de Nárnia</h4>
                             <p>C. S. Lewis</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
+
+                    <a href="livro.html?livro=senhor-dos-aneis" class="livro-card">
+                        <img src="imagens/livro-fantasia-5.jpg"
+                            alt="Capa do livro O Senhor dos Anéis, de J.R.R. Tolkien">
+
+                        <div class="livro-info">
+                            <h4>O Senhor dos Anéis</h4>
+                            <p>J.R.R. Tolkien</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=eragon" class="livro-card">
+                        <img src="imagens/livro-fantasia-6.jpg"
+                            alt="Capa do livro Eragon, de Christopher Paolini">
+
+                        <div class="livro-info">
+                            <h4>Eragon</h4>
+                            <p>Christopher Paolini</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
 
                 </div>
-
             </section>
 
 
-            <!-- AÇÃO -->
-            <section class="categoria" id="acao">
+            <!-- ==================================================
+                ROMANCE
+            ================================================== -->
 
-                <div class="categoria-cabecalho">
-                    <h3>Ação</h3>
-                    <span>Histórias cheias de aventura</span>
-                </div>
-
-                <div class="livros-grid">
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-acao-1.jpg" alt="Capa de um livro de ação">
-                        <div class="livro-info">
-                            <h4>Livro de Ação 1</h4>
-                            <p>Autor</p>
-                            <span class="avaliacao">★★★★☆</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-acao-2.jpg" alt="Capa de um livro de ação">
-                        <div class="livro-info">
-                            <h4>Livro de Ação 2</h4>
-                            <p>Autor</p>
-                            <span class="avaliacao">★★★★★</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-acao-3.jpg" alt="Capa de um livro de ação">
-                        <div class="livro-info">
-                            <h4>Livro de Ação 3</h4>
-                            <p>Autor</p>
-                            <span class="avaliacao">★★★★☆</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-acao-4.jpg" alt="Capa de um livro de ação">
-                        <div class="livro-info">
-                            <h4>Livro de Ação 4</h4>
-                            <p>Autor</p>
-                            <span class="avaliacao">★★★★★</span>
-                        </div>
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- NACIONAL -->
-            <section class="categoria" id="nacional">
-
-                <div class="categoria-cabecalho">
-                    <h3>Nacional</h3>
-                    <span>Autores e histórias brasileiras</span>
-                </div>
-
-                <div class="livros-grid">
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-nacional-1.jpg" alt="Capa de livro nacional">
-                        <div class="livro-info">
-                            <h4>Livro Nacional 1</h4>
-                            <p>Autor brasileiro</p>
-                            <span class="avaliacao">★★★★★</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-nacional-2.jpg" alt="Capa de livro nacional">
-                        <div class="livro-info">
-                            <h4>Livro Nacional 2</h4>
-                            <p>Autor brasileiro</p>
-                            <span class="avaliacao">★★★★☆</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-nacional-3.jpg" alt="Capa de livro nacional">
-                        <div class="livro-info">
-                            <h4>Livro Nacional 3</h4>
-                            <p>Autor brasileiro</p>
-                            <span class="avaliacao">★★★★★</span>
-                        </div>
-                    </article>
-
-                    <article class="livro-card">
-                        <img src="imagens/livro-nacional-4.jpg" alt="Capa de livro nacional">
-                        <div class="livro-info">
-                            <h4>Livro Nacional 4</h4>
-                            <p>Autor brasileiro</p>
-                            <span class="avaliacao">★★★★☆</span>
-                        </div>
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- ROMANCES -->
             <section class="categoria" id="romances">
 
                 <div class="categoria-cabecalho">
-                    <h3>Romances</h3>
+                    <h3>Romance</h3>
                     <span>Histórias para se apaixonar</span>
                 </div>
 
                 <div class="livros-grid">
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-romance-1.jpg" alt="Capa de livro de romance">
+                    <a href="livro.html?livro=orgulho-e-preconceito" class="livro-card">
+                        <img src="imagens/livro-romance-1.jpg"
+                            alt="Capa do livro Orgulho e Preconceito, de Jane Austen">
+
                         <div class="livro-info">
-                            <h4>Romance 1</h4>
-                            <p>Autor</p>
+                            <h4>Orgulho e Preconceito</h4>
+                            <p>Jane Austen</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-romance-2.jpg" alt="Capa de livro de romance">
-                        <div class="livro-info">
-                            <h4>Romance 2</h4>
-                            <p>Autor</p>
-                            <span class="avaliacao">★★★★☆</span>
-                        </div>
-                    </article>
+                    <a href="livro.html?livro=culpa-das-estrelas" class="livro-card">
+                        <img src="imagens/livro-romance-2.jpg"
+                            alt="Capa do livro A Culpa é das Estrelas, de John Green">
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-romance-3.jpg" alt="Capa de livro de romance">
                         <div class="livro-info">
-                            <h4>Romance 3</h4>
-                            <p>Autor</p>
+                            <h4>A Culpa é das Estrelas</h4>
+                            <p>John Green</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="livro-card">
-                        <img src="imagens/livro-romance-4.jpg" alt="Capa de livro de romance">
+                    <a href="livro.html?livro=como-eu-era-antes-de-voce" class="livro-card">
+                        <img src="imagens/livro-romance-3.jpg"
+                            alt="Capa do livro Como Eu Era Antes de Você, de Jojo Moyes">
+
                         <div class="livro-info">
-                            <h4>Romance 4</h4>
-                            <p>Autor</p>
+                            <h4>Como Eu Era Antes de Você</h4>
+                            <p>Jojo Moyes</p>
                             <span class="avaliacao">★★★★★</span>
                         </div>
-                    </article>
+                    </a>
 
-                    </div>
+                    <a href="livro.html?livro=diario-de-uma-paixao" class="livro-card">
+                        <img src="imagens/livro-romance-4.jpg"
+                            alt="Capa do livro Diário de uma Paixão, de Nicholas Sparks">
 
-                </section>
+                        <div class="livro-info">
+                            <h4>Diário de uma Paixão</h4>
+                            <p>Nicholas Sparks</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=um-dia" class="livro-card">
+                        <img src="imagens/livro-romance-5.jpg"
+                            alt="Capa do livro Um Dia, de David Nicholls">
+
+                        <div class="livro-info">
+                            <h4>Um Dia</h4>
+                            <p>David Nicholls</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=hipotese-do-amor" class="livro-card">
+                        <img src="imagens/livro-romance-6.jpg"
+                            alt="Capa do livro A Hipótese do Amor, de Ali Hazelwood">
+
+                        <div class="livro-info">
+                            <h4>A Hipótese do Amor</h4>
+                            <p>Ali Hazelwood</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- ==================================================
+                VÍDEO 2 - EXPERIÊNCIA DA LEITURA
+            ================================================== -->
+
+            <section class="secao-video secao-video-leitura">
+
+                <h2>A leitura conecta pessoas</h2>
+
+                <p>
+                    Ler é descobrir novos mundos, compartilhar experiências
+                    e encontrar inspiração em cada página.
+                </p>
+
+                <video
+                   controls
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                >
+
+                    <source
+                        src="videos/leitura-compartilhada.mp4"
+                        type="video/mp4"
+                    >
+
+                    <track
+                        kind="subtitles"
+                        src="videos/legendas-leitura.vtt"
+                        srclang="pt-BR"
+                        label="Português"
+                        default
+                    >
+
+                    <p>
+                        Seu navegador não suporta a reprodução deste vídeo.
+                    </p>
+
+                </video>
+
+                <p class="status-video" aria-live="polite"></p>
+
+            </section>
+
+            <!-- ==================================================
+                AÇÃO E AVENTURA
+            ================================================== -->
+
+            <section class="categoria" id="acao">
+
+                <div class="categoria-cabecalho">
+                    <h3>Ação e aventura</h3>
+                    <span>Histórias cheias de aventura</span>
+                </div>
+
+                <div class="livros-grid">
+
+                    <a href="livro.html?livro=ilha-do-tesouro" class="livro-card">
+                        <img src="imagens/livro-acao-1.jpg"
+                            alt="Capa do livro A Ilha do Tesouro, de Robert Louis Stevenson">
+
+                        <div class="livro-info">
+                            <h4>A Ilha do Tesouro</h4>
+                            <p>Robert Louis Stevenson</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=tres-mosqueteiros" class="livro-card">
+                        <img src="imagens/livro-acao-2.jpg"
+                            alt="Capa do livro Os Três Mosqueteiros, de Alexandre Dumas">
+
+                        <div class="livro-info">
+                            <h4>Os Três Mosqueteiros</h4>
+                            <p>Alexandre Dumas</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=conde-de-monte-cristo" class="livro-card">
+                        <img src="imagens/livro-acao-3.jpg"
+                            alt="Capa do livro O Conde de Monte Cristo, de Alexandre Dumas">
+
+                        <div class="livro-info">
+                            <h4>O Conde de Monte Cristo</h4>
+                            <p>Alexandre Dumas</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=jogos-vorazes" class="livro-card">
+                        <img src="imagens/livro-acao-4.jpg"
+                            alt="Capa do livro Jogos Vorazes, de Suzanne Collins">
+
+                        <div class="livro-info">
+                            <h4>Jogos Vorazes</h4>
+                            <p>Suzanne Collins</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=maze-runner" class="livro-card">
+                        <img src="imagens/livro-acao-5.jpg"
+                            alt="Capa do livro Maze Runner, de James Dashner">
+
+                        <div class="livro-info">
+                            <h4>Maze Runner</h4>
+                            <p>James Dashner</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=perdido-em-marte" class="livro-card">
+                        <img src="imagens/livro-acao-6.jpg"
+                            alt="Capa do livro Perdido em Marte, de Andy Weir">
+
+                        <div class="livro-info">
+                            <h4>Perdido em Marte</h4>
+                            <p>Andy Weir</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
 
 
-                <!-- TERROR -->
-                <section class="categoria" id="terror">
+            <!-- ==================================================
+                SUSPENSE E TERROR
+            ================================================== -->
 
-                    <div class="categoria-cabecalho">
-                        <h3>Terror</h3>
-                        <span>Para quem gosta de sentir medo</span>
-                    </div>
+            <section class="categoria" id="terror">
 
-                    <div class="livros-grid">
+                <div class="categoria-cabecalho">
+                    <h3>Suspense e terror</h3>
+                    <span>Para quem gosta de sentir medo</span>
+                </div>
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-terror-1.jpg" alt="Capa de livro de terror">
-                            <div class="livro-info">
-                                <h4>Terror 1</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★★</span>
-                            </div>
-                        </article>
+                <div class="livros-grid">
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-terror-2.jpg" alt="Capa de livro de terror">
-                            <div class="livro-info">
-                                <h4>Terror 2</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★☆</span>
-                            </div>
-                        </article>
+                    <a href="livro.html?livro=it-a-coisa" class="livro-card">
+                        <img src="imagens/livro-terror-1.jpg"
+                            alt="Capa do livro It: A Coisa, de Stephen King">
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-terror-3.jpg" alt="Capa de livro de terror">
-                            <div class="livro-info">
-                                <h4>Terror 3</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★★</span>
-                            </div>
-                        </article>
+                        <div class="livro-info">
+                            <h4>It: A Coisa</h4>
+                            <p>Stephen King</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-terror-4.jpg" alt="Capa de livro de terror">
-                            <div class="livro-info">
-                                <h4>Terror 4</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★☆</span>
-                            </div>
-                        </article>
+                    <a href="livro.html?livro=o-iluminado" class="livro-card">
+                        <img src="imagens/livro-terror-2.jpg"
+                            alt="Capa do livro O Iluminado, de Stephen King">
 
-                    </div>
+                        <div class="livro-info">
+                            <h4>O Iluminado</h4>
+                            <p>Stephen King</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
 
-                </section>
+                    <a href="livro.html?livro=dracula" class="livro-card">
+                        <img src="imagens/livro-terror-3.jpg"
+                            alt="Capa do livro Drácula, de Bram Stoker">
+
+                        <div class="livro-info">
+                            <h4>Drácula</h4>
+                            <p>Bram Stoker</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=paciente-silenciosa" class="livro-card">
+                        <img src="imagens/livro-terror-4.jpg"
+                            alt="Capa do livro A Paciente Silenciosa, de Alex Michaelides">
+
+                        <div class="livro-info">
+                            <h4>A Paciente Silenciosa</h4>
+                            <p>Alex Michaelides</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=garota-exemplar" class="livro-card">
+                        <img src="imagens/livro-terror-5.jpg"
+                            alt="Capa do livro Garota Exemplar, de Gillian Flynn">
+
+                        <div class="livro-info">
+                            <h4>Garota Exemplar</h4>
+                            <p>Gillian Flynn</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=assombracao-casa-colina" class="livro-card">
+                        <img src="imagens/livro-terror-6.jpg"
+                            alt="Capa do livro A Assombração da Casa da Colina, de Shirley Jackson">
+
+                        <div class="livro-info">
+                            <h4>A Assombração da Casa da Colina</h4>
+                            <p>Shirley Jackson</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
 
 
-                <!-- TECNOLOGIA -->
-                <section class="categoria" id="tecnologia">
+            <!-- ==================================================
+                TECNOLOGIA
+            ================================================== -->
 
-                    <div class="categoria-cabecalho">
-                        <h3>Tecnologia</h3>
-                        <span>Conhecimento para transformar o futuro</span>
-                    </div>
+            <section class="categoria" id="tecnologia">
 
-                    <div class="livros-grid">
+                <div class="categoria-cabecalho">
+                    <h3>Tecnologia</h3>
+                    <span>Conhecimento para transformar o futuro</span>
+                </div>
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-tecnologia-1.jpg" alt="Capa de livro de tecnologia">
-                            <div class="livro-info">
-                                <h4>Clean Code</h4>
-                                <p>Robert C. Martin</p>
-                                <span class="avaliacao">★★★★★</span>
-                            </div>
-                        </article>
+                <div class="livros-grid">
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-tecnologia-2.jpg" alt="Capa de livro de tecnologia">
-                            <div class="livro-info">
-                                <h4>O Programador Pragmático</h4>
-                                <p>Andrew Hunt</p>
-                                <span class="avaliacao">★★★★★</span>
-                            </div>
-                        </article>
+                    <a href="livro.html?livro=clean-code" class="livro-card">
+                        <img src="imagens/livro-tecnologia-1.jpg"
+                            alt="Capa do livro Clean Code, de Robert C. Martin">
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-tecnologia-3.jpg" alt="Capa de livro de tecnologia">
-                            <div class="livro-info">
-                                <h4>JavaScript</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★☆</span>
-                            </div>
-                        </article>
+                        <div class="livro-info">
+                            <h4>Clean Code</h4>
+                            <p>Robert C. Martin</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
 
-                        <article class="livro-card">
-                            <img src="imagens/livro-tecnologia-4.jpg" alt="Capa de livro de tecnologia">
-                            <div class="livro-info">
-                                <h4>HTML e CSS</h4>
-                                <p>Autor</p>
-                                <span class="avaliacao">★★★★★</span>
-                            </div>
-                        </article>
+                    <a href="livro.html?livro=programador-pragmatico" class="livro-card">
+                        <img src="imagens/livro-tecnologia-2.jpg"
+                            alt="Capa do livro O Programador Pragmático, de Andrew Hunt e David Thomas">
 
-                    </div>
+                        <div class="livro-info">
+                            <h4>O Programador Pragmático</h4>
+                            <p>Andrew Hunt e David Thomas</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
 
-                </section>
+                    <a href="livro.html?livro=javascript" class="livro-card">
+                        <img src="imagens/livro-tecnologia-3.jpg"
+                            alt="Capa do livro JavaScript: O Guia Definitivo, de David Flanagan">
 
+                        <div class="livro-info">
+                            <h4>JavaScript: O Guia Definitivo</h4>
+                            <p>David Flanagan</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=html-css" class="livro-card">
+                        <img src="imagens/livro-tecnologia-4.jpg"
+                            alt="Capa do livro HTML e CSS: Projete e Construa Websites, de Jon Duckett">
+
+                        <div class="livro-info">
+                            <h4>HTML e CSS</h4>
+                            <p>Jon Duckett</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=entendendo-algoritmos" class="livro-card">
+                        <img src="imagens/livro-tecnologia-5.jpg"
+                            alt="Capa do livro Entendendo Algoritmos, de Aditya Bhargava">
+
+                        <div class="livro-info">
+                            <h4>Entendendo Algoritmos</h4>
+                            <p>Aditya Bhargava</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=eloquent-javascript" class="livro-card">
+                        <img src="imagens/livro-tecnologia-6.jpg"
+                            alt="Capa do livro Eloquent JavaScript, de Marijn Haverbeke">
+
+                        <div class="livro-info">
+                            <h4>Eloquent JavaScript</h4>
+                            <p>Marijn Haverbeke</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+
+            <!-- ==================================================
+                LITERATURA BRASILEIRA
+            ================================================== -->
+
+            <section class="categoria" id="nacional">
+
+                <div class="categoria-cabecalho">
+                    <h3>Literatura brasileira</h3>
+                    <span>Autores e histórias brasileiras</span>
+                </div>
+
+                <div class="livros-grid">
+
+                    <a href="livro.html?livro=dom-casmurro" class="livro-card">
+                        <img src="imagens/livro-nacional-1.jpg"
+                            alt="Capa do livro Dom Casmurro, de Machado de Assis">
+
+                        <div class="livro-info">
+                            <h4>Dom Casmurro</h4>
+                            <p>Machado de Assis</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=o-cortico" class="livro-card">
+                        <img src="imagens/livro-nacional-2.jpg"
+                            alt="Capa do livro O Cortiço, de Aluísio Azevedo">
+
+                        <div class="livro-info">
+                            <h4>O Cortiço</h4>
+                            <p>Aluísio Azevedo</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=capitaes-da-areia" class="livro-card">
+                        <img src="imagens/livro-nacional-3.jpg"
+                            alt="Capa do livro Capitães da Areia, de Jorge Amado">
+
+                        <div class="livro-info">
+                            <h4>Capitães da Areia</h4>
+                            <p>Jorge Amado</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=vidas-secas" class="livro-card">
+                        <img src="imagens/livro-nacional-4.jpg"
+                            alt="Capa do livro Vidas Secas, de Graciliano Ramos">
+
+                        <div class="livro-info">
+                            <h4>Vidas Secas</h4>
+                            <p>Graciliano Ramos</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=hora-da-estrela" class="livro-card">
+                        <img src="imagens/livro-nacional-5.jpg"
+                            alt="Capa do livro A Hora da Estrela, de Clarice Lispector">
+
+                        <div class="livro-info">
+                            <h4>A Hora da Estrela</h4>
+                            <p>Clarice Lispector</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                    <a href="livro.html?livro=auto-da-compadecida" class="livro-card">
+                        <img src="imagens/livro-nacional-6.jpg"
+                            alt="Capa do livro O Auto da Compadecida, de Ariano Suassuna">
+
+                        <div class="livro-info">
+                            <h4>O Auto da Compadecida</h4>
+                            <p>Ariano Suassuna</p>
+                            <span class="avaliacao">★★★★★</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
         </section>
 
 
-        <section class="secao-video">
-            <h2>conheça nossa coleção</h2>
+        <!-- ==================================================
+            VÍDEO 3 - DESCOBERTA DE NOVOS LIVROS
+        ================================================== -->
+
+        <section class="secao-video secao-video-descoberta">
+
+            <h2>Sempre existe uma nova história</h2>
 
             <p>
-                Conheça um pouco da experiência da Central livro e descubra sua próxima leitura.
+                Explore nossas estantes, conheça novos autores
+                e encontre o livro que combina com você.
+                Sua próxima leitura começa na Central Livro.
             </p>
-            <!--
-                preload="metadata" foi escolhido porque o vídeo é um conteúdo
-                complementar da página. Dessa forma, o navegador pode carregar
-                informações básicas do vídeo sem carregar todo o arquivo antes
-                da interação do usuário.
-            -->
 
-            <video 
-            controls 
-            preload="metadata" 
-            poster="imagens/poster_video.png"
+            <video
+                controls
+                muted
+                loop
+                playsinline
+                preload="metadata"
             >
 
-                <source src="videos/conheça_central_livro.mp4" 
-                type="video/mp4"
+                <source
+                    src="videos/escolhendo-livros.mp4"
+                    type="video/mp4"
                 >
 
-                <source src="videos/conheça_central_livro.Webm" 
-                type="video/Webm"
+                <track
+                    kind="subtitles"
+                    src="videos/legendas-escolha.vtt"
+                    srclang="pt-BR"
+                    label="Português"
+                    default
                 >
 
-                <track 
-                kind="subtitles" 
-                src="videos/legendas.vtt" 
-                srclang="pt-br" 
-                label="Português" 
-                default
-                >
-
-                <p id="status-video">
-                <!--mensagem alternativa caso o navegador não abra o video-->
-                Seu navegador não suporta a reprodução do video.
+                <p>
+                    Seu navegador não suporta a reprodução deste vídeo.
                 </p>
 
             </video>
 
-            
+            <p class="status-video" aria-live="polite"></p>
+
         </section>
-
-        <section class="formulario-container">
-            <h2>Encontre seu proximo livro</h2>
-
-            <form>
-                <fieldset>
-                    <legend> dados do leitor</legend>
-
-                    <label for="nome">nome:</label>
-                    <input type="text"
-                    id="nome"
-                    name="nome"
-                    required
-                    >
-
-                    <label for="email">E-mail:</label>
-                    <input type="email"
-                    id="email"
-                    name="email"
-                    required
-                    >
-
-                    <label for="number">quantidade</label>
-                    <input type="number"
-                    id="number"
-                    name="quantidade"
-                    min="1"
-                    max="10"
-                    >
-
-                    <input type="submit" value="enviar">
-
-                </fieldset>
-
-                <label for="genero">escolha seu gênero favorito:</label>
-
-                <select name="genero" id="genero">
-                    <option value="">selecione uma opção</option>
-                    <option value="fantasia">Fantasia</option>
-                    <option value="romances">Romances</option>
-                    <option value="terror">Terror</option>
-                    <option value="acao">Ação</option>
-                    <option value="nacional">Nacional</option>
-                    <option value="tecnologia">Tecnologia</option>
-                </select>
-
-                <fieldset>
-                    <legend>Qual formato você prefere?</legend>
-
-                    <input type="radio" id="fisico" name="formato" value="fisico">
-                    <label for="fisico">Livro fisico</label>
-
-                    <input type="radio" id="ebook" name="formato" value="ebook">
-                    <label for="ebook">E-book</label>
-
-                    <input type="radio" id="audiobook" name="formato" value="audiobook">
-                    <label for="audiobook">Audiobook</label>
-                </fieldset>
-            </form>
-        </section>    
     </main>
 
-    <footer>
-        <section>
-            <div>
-                <a href="https://github.com/aska-code">github</a>
+   <!-- ==================================================
+        RODAPÉ DA CENTRAL LIVRO
+    ================================================== -->
+
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <!-- Identidade da livraria -->
+            <div class="rodape-marca">
+
+                <a href="#inicio" class="rodape-logo">
+                    <img src="img/logo1.ico" alt="">
+                    <span>Central Livro</span>
+                </a>
+
+                <p>
+                    Sua história começa aqui.
+                    Descubra novos mundos, autores e experiências
+                    através da leitura.
+                </p>
+
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/pedro-henrique-694b3742b">linkedin</a>
+
+            <!-- Navegação do rodapé -->
+            <div class="rodape-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#fantasia">Fantasia</a></li>
+                    <li><a href="#romances">Romance</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#nacional">Literatura brasileira</a></li>
+                </ul>
+
             </div>
-        </section>
+
+            <!-- Redes profissionais -->
+            <div class="rodape-redes">
+
+                <h3>Desenvolvimento</h3>
+
+                <p>
+                    Acompanhe o desenvolvimento
+                    deste projeto acadêmico.
+                </p>
+
+                <div class="redes-links">
+
+                    <a
+                        href="https://github.com/phgcoder"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/pedro-henrique-694b3742b"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Parte inferior do rodapé -->
+        <div class="rodape-inferior">
+
+            <p>
+                © 2026 Central Livro. Todos os direitos reservados.
+            </p>
+
+            <a href="#inicio">Voltar ao início ↑</a>
+
+        </div>
+
     </footer>
+
+    <script src="javaScript/script.js" defer></script>
+    <script src="javaScript/catalog.js" defer></script>
+    <script src="javaScript/video.js" defer></script>
+
 </body>
-<script src="javaScript/script.js" defer></script>
 </html>

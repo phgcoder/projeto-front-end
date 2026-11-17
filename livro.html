@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conheça os detalhes do livro e faça seu pedido na Central Livro.">
+
+    <title>Detalhes do livro - Central Livro</title>
+
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho-topo">
+
+            <a href="home.html#inicio" class="logo-container"
+                aria-label="Central Livro - Início">
+                <img src="img/logo1.ico" alt="">
+            </a>
+
+            <div class="apresentacao">
+                <h1>Central Livro</h1>
+
+                <p>
+                    Sua próxima história começa aqui.
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="pagina-produto">
+
+        <a href="home.html#catalogo" class="voltar-catalogo">
+            ← Voltar ao catálogo
+        </a>
+
+        <section class="detalhes-livro">
+
+            <div class="produto-imagem">
+                <img
+                    id="imagem-produto"
+                    src=""
+                    alt="Capa do livro selecionado"
+                >
+            </div>
+
+            <div class="produto-informacoes">
+
+                <span class="produto-categoria" id="categoria-produto">
+                    Livro
+                </span>
+
+                <h2 id="titulo-produto">
+                    Título do livro
+                </h2>
+
+                <p class="produto-autor">
+                    Autor: <span id="autor-produto"></span>
+                </p>
+
+                <p class="produto-avaliacao">
+                    ★★★★★
+                </p>
+
+                <p class="produto-descricao" id="descricao-produto">
+                    Descrição do livro.
+                </p>
+
+                <p class="produto-preco" id="preco-produto">
+                    R$ 49,90
+                </p>
+
+                <div class="produto-quantidade">
+
+                    <label for="quantidade-produto">
+                        Quantidade:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantidade-produto"
+                        min="1"
+                        value="1"
+                    >
+
+                </div>
+
+                <button type="button" id="botao-comprar">
+                    Comprar
+                </button>
+
+                <p id="mensagem-compra" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Central Livro — Sua história começa aqui.</p>
+    </footer>
+
+    <script src="javaScript/catalog.js" defer></script>
+
+</body>
+
+</html>

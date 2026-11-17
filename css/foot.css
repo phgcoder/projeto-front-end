@@ -1,33 +1,170 @@
-@import url(root.css);
+@import url("root.css");
 
 /* ==================================================
-   RODAPÉ
-   ================================================== */
+   RODAPÉ - CENTRAL LIVRO
+================================================== */
 
-footer {
-    margin-top: 60px;
-    padding: 40px 20px;
-    border-top: 1px solid var(--cor-borda);
-    background-color: var(--cor-fundo-escuro);
-    text-align: center;
+.rodape {
+    margin-top: 70px;
+    padding: 50px 30px 20px;
+    background: linear-gradient(135deg, #241710, #352219);
+    border-top: 2px solid #e6b96b;
 }
 
-
-footer section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.rodape-conteudo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
 }
 
+/* IDENTIDADE DA LIVRARIA */
 
-footer a {
-    color: var(--cor-acento);
+.rodape-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #e6b96b;
     text-decoration: none;
-    transition: color var(--transicao-padrao);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
+.rodape-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
 
-footer a:hover {
-    color: var(--cor-destaque);
+.rodape-marca p {
+    max-width: 320px;
+    margin-top: 18px;
+    color: #e0d5ca;
+    line-height: 1.8;
+}
+
+/* TÍTULOS DAS COLUNAS */
+
+.rodape h3 {
+    margin-bottom: 20px;
+    color: #e6b96b;
+    font-size: 1.15rem;
+}
+
+/* LINKS DE NAVEGAÇÃO */
+
+.rodape-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rodape-links a {
+    color: #e0d5ca;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.rodape-links a:hover {
+    color: #e6b96b;
+    padding-left: 5px;
+}
+
+/* REDES SOCIAIS */
+
+.rodape-redes p {
+    margin-bottom: 20px;
+    color: #e0d5ca;
+    line-height: 1.7;
+}
+
+.redes-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.redes-links a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #241710;
+    background-color: #e6b96b;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-links a:hover {
+    background-color: #f1ca85;
+    transform: translateY(-3px);
+}
+
+/* PARTE INFERIOR */
+
+.rodape-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #5b4030;
+}
+
+.rodape-inferior p {
+    color: #bca99b;
+    font-size: 0.9rem;
+}
+
+.rodape-inferior a {
+    color: #e6b96b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.rodape-inferior a:hover {
+    color: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+    .rodape-conteudo {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .rodape-marca {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 500px) {
+    .rodape {
+        padding: 40px 20px 20px;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rodape-marca {
+        grid-column: auto;
+    }
+
+    .rodape-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -105,11 +105,14 @@
     .livros-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
+        gap: 12px;
+        padding-bottom: 20px;
     }
 
 
     .livro-card > img {
         height: 230px;
+        flex: 0 0 160px;
     }
 
 
@@ -128,14 +131,40 @@
         padding: 30px 15px;
     }
 
-    .formulario-container {
+    /* ==============================================
+        RESPONSIVIDADE DA BARRA DE PESQUISA
+        ============================================== */
+
+    .busca-livros {
         margin: 30px 15px;
-        padding: 25px 15px;
+        padding: 25px 18px;
     }
 
-    .formulario-container fieldset {
-        padding: 18px 14px;
+    .busca-conteudo h2 {
+        font-size: 1.5rem;
     }
+
+    /* Organiza o campo e o botão verticalmente */
+    .formulario-busca {
+        flex-direction: column;
+    }
+
+    /* Ocupa toda a largura disponível */
+    .formulario-busca button {
+        width: 100%;
+    }
+
+    /* Carrossel de livros em dispositivos móveis */
+    .livros-grid {
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    /* Cards menores para telas pequenas */
+    .livro-card {
+        flex: 0 0 160px;
+    }
+
 }
 
 /* Respeita a preferência do usuário por menos animações */
@@ -150,5 +179,84 @@
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE DA SEÇÃO DE DESTAQUE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .livros-destaque {
+        margin: 30px 15px;
+        padding: 40px 25px;
+    }
+
+    .destaque-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .destaque-texto {
+        max-width: 100%;
+    }
+
+    .destaque-ilustracao {
+        width: 100%;
+    }
+
+    .ilustracao-livro {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .livros-destaque {
+        padding: 35px 20px;
+    }
+
+    .destaque-texto h2 {
+        font-size: 2rem;
+    }
+
+    .destaque-texto p {
+        font-size: 0.95rem;
+    }
+
+    .destaque-etiqueta {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* ==================================================
+   RESPONSIVIDADE DO HEADER
+================================================== */
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 30px 18px;
+    }
+
+    .cabecalho-topo {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .logo-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .apresentacao h1 {
+        font-size: 2rem;
+    }
+
+    .apresentacao p {
+        font-size: 0.9rem;
     }
 }

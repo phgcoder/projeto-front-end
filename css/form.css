@@ -1,85 +1,114 @@
 @import url(root.css);
 
 /* ==================================================
-   FORMULÁRIO
+   BARRA DE PESQUISA DO CATÁLOGO
+   Permite pesquisar livros pelo título ou autor.
    ================================================== */
 
-.formulario-container {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 40px 30px;
-}
+/* Container principal da pesquisa */
+.busca-livros {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px 30px;
 
-.formulario-container h2 {
-    margin-bottom: 25px;
-    color: var(--cor-destaque);
-}
+    background-color: var(--cor-superficie);
 
-.formulario-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.formulario-container fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    min-width: 0;
-    padding: 25px;
     border: 1px solid #624332;
     border-radius: var(--raio-card);
-    background-color: var(--cor-superficie);
+
+    text-align: center;
 }
 
-.formulario-container legend {
-    padding: 0 10px;
-    color: #e4aa6c;
-    font-weight: bold;
+/* Limita a largura do conteúdo interno */
+.busca-conteudo {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
-.formulario-container label {
-    display: block;
-    margin-bottom: 5px;
+/* Título da seção */
+.busca-conteudo h2 {
+    margin-bottom: 10px;
+
+    color: var(--cor-destaque);
+    font-size: 1.8rem;
+}
+
+/* Texto explicativo */
+.busca-conteudo > p {
+    margin-bottom: 22px;
     color: var(--cor-texto-suave);
 }
 
-.formulario-container input:not([type="radio"]):not([type="submit"]),
-.formulario-container select {
-    width: 100%;
-    padding: 12px;
+/* Organiza o campo e o botão lado a lado */
+.formulario-busca {
+    display: flex;
+    gap: 10px;
+}
+
+/* Campo de pesquisa */
+.formulario-busca input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 14px 16px;
+
     border: 1px solid #6b4935;
     border-radius: 8px;
+
     background-color: #302119;
     color: var(--cor-texto);
+
     font: inherit;
 }
 
-.formulario-container input:focus,
-.formulario-container select:focus {
-    border-color: var(--cor-acento);
+/* Destaque visual ao selecionar o campo */
+.formulario-busca input:focus-visible {
+    outline: 2px solid var(--cor-acento);
+    outline-offset: 2px;
 }
 
-.formulario-container input[type="radio"] {
-    width: auto;
-    margin-right: 6px;
-    accent-color: var(--cor-acento);
-}
+/* Botão de pesquisa */
+.formulario-busca button {
+    padding: 14px 24px;
 
-.formulario-container input[type="submit"] {
-    width: 100%;
-    padding: 12px;
     border: none;
     border-radius: 8px;
+
     background-color: var(--cor-acento);
     color: var(--cor-fundo);
-    font-size: 1rem;
+
+    font: inherit;
     font-weight: bold;
+
     cursor: pointer;
+
     transition: background-color var(--transicao-padrao);
 }
 
-.formulario-container input[type="submit"]:hover {
+/* Efeito visual ao passar o mouse */
+.formulario-busca button:hover {
     background-color: var(--cor-acento-hover);
 }
 
+/* Mantém o label acessível sem ocupar espaço visual */
+.visualmente-oculto {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Mensagem apresentada após a pesquisa */
+#resultado-busca {
+    margin-top: 15px;
+    color: var(--cor-texto-suave);
+}

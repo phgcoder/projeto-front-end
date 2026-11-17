@@ -5,55 +5,83 @@
    ================================================== */
 
 .cabecalho {
-    background: linear-gradient(135deg, #241914, #4b2d20);
-    border-bottom: 1px solid var(--cor-borda-clara);
+    width: 100%;
+    padding: 35px 20px;
+
+    background: linear-gradient(135deg, #241710, #352219);
+    border-bottom: 3px solid #e6b96b;
 }
 
 
 /* parte superior do cabeçalho */
 
 .cabecalho-topo {
-     max-width: var(--largura-conteudo);
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 30px;
 
-    /* Flexbox: organiza logo e apresentação em um eixo */
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 25px;
 }
 
 
 /* logo */
 
-.logo-container img {
-    display: block;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+.logo-container {
+    width: 95px;
+    height: 95px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
     border-radius: 50%;
-    background-color: #7b3f25;
-    border: 5px solid #c98b55;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
 /* apresentação */
 
 .apresentacao {
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .apresentacao h1 {
-    margin-bottom: 15px;
-    font-size: 3rem;
-    color: var(--cor-destaque)
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin: 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.slogan {
+    display: block;
+    color: #e6b96b;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
 }
 
 .apresentacao p {
-    color: var(--cor-texto-suave);
-    font-size: 1.05rem;
+    color: #e0d5ca;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
 }
-
 
 
