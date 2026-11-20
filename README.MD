@@ -6,7 +6,7 @@
 Uma livraria digital desenvolvida como projeto integrador da disciplina de **Desenvolvimento Front-end para Web**. A Central Livro organiza livros por gêneros e busca oferecer uma experiência de navegação prática, acolhedora e responsiva para leitores descobrirem sua próxima leitura.
 
 <!-- Substitua pelo print real da versão desktop -->
-<img src="assets/images/captura-desktop.png" alt="Central Livro em desktop" width="850">
+<img src="assets/imagens/captura-desktop.png" alt="Central Livro em desktop" width="850">
 
 </div>
 
@@ -48,12 +48,12 @@ Adicione os prints na pasta `assets/images/`. Os caminhos abaixo são espaços r
 ### Desktop
 
 <!-- TODO: adicionar captura real -->
-![Central Livro — versão desktop](assets/images/captura-desktop.png)
+![Central Livro — versão desktop](assets/imagens/captura-desktop2.png)
 
 ### Celular
 
 <!-- TODO: adicionar captura real -->
-![Central Livro — versão mobile](assets/images/captura-mobile.png)
+![Central Livro — versão mobile](assets/imagens/captura-mobile.jpeg)
 
 ## 📂 Estrutura do projeto
 
